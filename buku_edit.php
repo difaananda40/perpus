@@ -1,4 +1,4 @@
-<title>Sensus | Person Edit</title>
+<title>Perpus | Buku Edit</title>
 <?php
     include 'session_check.php';
     include 'koneksi.php';

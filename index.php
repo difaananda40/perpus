@@ -1,4 +1,4 @@
-<title>Sensus | Home</title>
+<title>Perpus | Home</title>
 <?php 
     include 'session_check.php';
     include 'template.php'; 
