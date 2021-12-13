@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 08, 2021 at 04:18 AM
--- Server version: 5.7.18
--- PHP Version: 7.4.21
+-- Generation Time: Dec 13, 2021 at 05:16 PM
+-- Server version: 5.7.24
+-- PHP Version: 7.2.19
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -55,8 +56,16 @@ CREATE TABLE `buku` (
   `penulis` varchar(255) NOT NULL,
   `penerbit` varchar(255) NOT NULL,
   `tahun_terbit` int(11) NOT NULL,
-  `kode_rak` varchar(30) NOT NULL
+  `kode_rak` varchar(30) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `buku`
+--
+
+INSERT INTO `buku` (`kode_buku`, `judul`, `penulis`, `penerbit`, `tahun_terbit`, `kode_rak`, `status`) VALUES
+('B-2', 'Harry Potters', 'Ebiet G. Ade', 'Erlangga', 2000, 'R-1', 0);
 
 -- --------------------------------------------------------
 
@@ -123,6 +132,14 @@ CREATE TABLE `rak` (
   `kode_rak` varchar(30) NOT NULL,
   `nama_rak` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rak`
+--
+
+INSERT INTO `rak` (`kode_rak`, `nama_rak`) VALUES
+('R-1', 'Rak Penghibur'),
+('R-2', 'Rak History');
 
 --
 -- Indexes for dumped tables
