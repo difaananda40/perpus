@@ -17,7 +17,8 @@
                 <th scope="col">Penerbit</th>
                 <th scope="col">Tahun Terbit</th>
                 <th scope="col">Rak</th>
-                <th scope="col">Action</th>
+                <th scope="col">Status</th>
+                <th scope="col">Action</th>            
             </tr>
         </thead>
         <tbody>
@@ -33,6 +34,7 @@
                 <td><?= $data['penerbit'] ?></td>
                 <td><?= $data['tahun_terbit'] ?></td>
                 <td><?= $data['nama_rak'] ?></td>
+                <td><?= $data['status'] ? 'Dipinjam' : 'Tidak Dipinjam' ?></td>
                 <td>
                     <a href="buku_edit.php?id=<?= $data['kode_buku'] ?>" class="btn btn-primary btn-sm">Edit</a>
                     <a href="buku_hapus.php?id=<?= $data['kode_buku'] ?>" class="btn btn-danger btn-sm">Hapus</a>
