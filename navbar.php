@@ -11,6 +11,9 @@
       <li class="nav-item">
         <a class="nav-link" href="anggota.php">Anggota</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="buku.php">Buku</a>
+      </li>
     </ul>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
