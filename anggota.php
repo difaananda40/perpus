@@ -4,6 +4,7 @@
     include 'koneksi.php';
     include 'template.php';
     include 'function.php';
+    include 'function_anggota.php';
 ?>
 <div class="container m-5 mx-auto">
     <h2>Anggota</h2>

@@ -4,6 +4,7 @@
     include 'koneksi.php';
     include 'template.php';
     include 'function.php';
+    include 'function_anggota.php';
 
     if(isset($_POST['kirim'])){
         if(anggota_tambah($_POST)){

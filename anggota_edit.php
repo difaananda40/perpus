@@ -4,6 +4,7 @@
     include 'koneksi.php';
     include 'template.php';
     include 'function.php';
+    include 'function_anggota.php';
     
     $kode_anggota = $_GET['id'];
 
